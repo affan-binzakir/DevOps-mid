@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-exam-deployment
+  labels:
+    app: devops-exam
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-exam
+  template:
+    metadata:
+      labels:
+        app: devops-exam
+    spec:
+      containers:
+      - name: devops-exam-app
+        # REPLACE <YOUR_DOCKERHUB_USERNAME> and <YOUR_REG_NO> BEFORE DEPLOYING!
+        image: <YOUR_DOCKERHUB_USERNAME>/<YOUR_REG_NO>:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

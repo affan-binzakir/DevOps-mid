@@ -1,0 +1,8 @@
+node_modules
+database.sqlite
+.git
+.env
+Dockerfile
+.dockerignore
+k8s/
+README.md
