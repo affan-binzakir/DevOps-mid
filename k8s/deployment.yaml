@@ -15,7 +15,7 @@ spec:
         app: devops-exam
     spec:
       containers:
-      - name: devops-exam-app
+      - name: devops-container
         
         image: YOUR_DOCKERHUB_USERNAME/devops-exam:FA23-BCS-023
         ports:
