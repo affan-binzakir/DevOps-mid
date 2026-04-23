@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: devops-exam-app
-        # REPLACE <YOUR_DOCKERHUB_USERNAME> and <YOUR_REG_NO> BEFORE DEPLOYING!
-        image: <YOUR_DOCKERHUB_USERNAME>/<YOUR_REG_NO>:latest
+        
+        image: YOUR_DOCKERHUB_USERNAME/devops-exam:FA23-BCS-023
         ports:
         - containerPort: 3000
         resources:
