@@ -17,7 +17,7 @@ spec:
       containers:
       - name: devops-container
         
-        image: affanbinz/devops-exam:FA23-BCS-023
+        image: YOUR_DOCKERHUB_USERNAME/devops-exam:FA23-BCS-023
         ports:
         - containerPort: 3000
         resources:
